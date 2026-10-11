@@ -1,0 +1,94 @@
+schema_version: 3
+campaign:
+  name: "test-senfl-dw"
+  title: "Ludwig Senfl - MAGNIFICAT SETTINGS MASS ORDINARIES - Magnificant Primi Toni"
+  description: "DTO 163.5"
+  instigator: "5521800"
+  repo_id: 1414565579
+  language: "en"
+  license: "CC-BY-4.0"
+automation:
+  central_repository: "lets-encode/lets-encode"
+  ref: "staging"
+  path: "scripts/coordinator.ts"
+source:
+  kind: "facsimile"
+  images:
+    - "sources/img/01.jpg"
+    - "sources/img/02.jpg"
+    - "sources/img/03.jpg"
+    - "sources/img/04.jpg"
+    - "sources/img/05.jpg"
+    - "sources/img/06.jpg"
+    - "sources/img/07.jpg"
+    - "sources/img/08.jpg"
+  header:
+    title: "Magnificat primi toni"
+    composer: "Ludwig Senfl"
+    publisher: "DTO"
+    date: ""
+  rights_acknowledged: "1"
+pieces:
+  - id: "piece-01"
+    kind: "facsimile"
+    preparation: "omr"
+    path: "sources/piece-01/score.mei"
+    zones:
+      - { surface: 1, ulx: 268, uly: 706, lrx: 1721, lry: 1088 }
+    header:
+      title: "[Versus 1]"
+      composer: "Ludwig Senfl"
+  - id: "piece-02"
+    kind: "facsimile"
+    preparation: "omr"
+    path: "sources/piece-02/score.mei"
+    zones:
+      - { surface: 1, ulx: 187, uly: 1088, lrx: 2746, lry: 3672 }
+      - { surface: 2, ulx: 230, uly: 349, lrx: 2627, lry: 1186 }
+    header:
+      title: "[Versus 2]"
+      composer: "Ludwig Senfl"
+  - id: "piece-03"
+    kind: "facsimile"
+    preparation: "omr"
+    path: "sources/piece-03/score.mei"
+    zones:
+      - { surface: 2, ulx: 230, uly: 1275, lrx: 2355, lry: 1777 }
+    header:
+      title: "[Versus 3]"
+      composer: "Ludwig Senfl"
+  - id: "piece-04"
+    kind: "facsimile"
+    preparation: "omr"
+    path: "sources/piece-04/score.mei"
+    zones:
+      - { surface: 2, ulx: 230, uly: 1938, lrx: 2682, lry: 3660 }
+      - { surface: 3, ulx: 238, uly: 328, lrx: 2724, lry: 2814 }
+    header:
+      title: "[Versus 4]"
+      composer: "Ludwig Senfl"
+  - id: "piece-05"
+    kind: "facsimile"
+    preparation: "omr"
+    path: "sources/piece-05/score.mei"
+    zones:
+      - { surface: 3, ulx: 332, uly: 2916, lrx: 2648, lry: 3312 }
+    header:
+      title: "[Versus 5]"
+      composer: "Ludwig Senfl"
+  - id: "piece-06"
+    kind: "facsimile"
+    preparation: "omr"
+    path: "sources/piece-06/score.mei"
+    zones:
+      - { surface: 4, ulx: 213, uly: 315, lrx: 2656, lry: 3656 }
+    header:
+      title: "[Versus 6]"
+      composer: "Ludwig Senfl"
+fragmentation:
+  strategy: "by-piece"
+validation:
+  required_validations: 1
+  pass_threshold: 1
+locking:
+  stale_after_minutes: 1440
